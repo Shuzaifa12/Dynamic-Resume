@@ -1,0 +1,166 @@
+body{
+    background: linear-gradient(to right, rgba(255, 201, 119, 0.854), rgba(224, 183, 70, 0.312));
+}
+.main_heading h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.container{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 600px;
+    margin: 0px auto;
+}
+.section_01, .section_02, .section_03, .section_04{
+    border: 2px solid purple;
+    background-color: antiquewhite;
+    margin: 10px;
+    padding: 5px;
+}
+.section_01 label, .section_02 label, .section_03 label, .section_04 label{
+    font-weight: bold;
+}
+.section_01 input, .section_02 input, .section_03 input, .section_04 input{
+    border: 1px solid black;
+}
+.Name_div, .Contact_div {
+    display: flex;
+    justify-content: space-between;
+}
+.Name_div div, .Contact_div div, .Address_div div{
+    padding-right: 10px;
+    margin-bottom: 8px;
+}
+.Address_div input{
+    width: 85%;
+    float: inline-end;
+}
+
+@media (max-width:720px) {
+    .container{
+        width: 100%;
+    }
+    .section_01 h3{
+        text-align: center;
+    }
+    .section_01 input{
+        width: 100%;
+    }
+    .Name_div, .Contact_div, .Address_div{
+        display: block;
+    }
+    .Address_div input{
+        width: 100%;
+        float:none;
+    }
+}
+
+.Title input, .Organization input{
+    width: 80%;
+    float: inline-end;
+    margin-right: 10px;
+}
+.Title, .Organization, .Date, .skills{
+    padding-right: 10px;
+    margin-bottom: 8px;
+}
+.Date{
+    display: flex;
+}
+.Date div{
+    margin-right: 15px;
+}
+
+@media (max-width:720px){
+    .section_02 h3, .section_03 h3{
+        text-align: center;
+    }
+    .Title input, .Organization input, .skills input{
+        float: none;
+        width: 100%;
+    }
+    .Date{
+        display: block;
+    }
+    .Date div{
+        margin-bottom: 8px;
+    }
+    .btn {
+        margin-top: 8px;
+        display: flex;
+        justify-content:center;
+    }
+}
+
+.Degree input, .Institute input{
+    width: 85%;
+    float: right;
+}
+.Degree, .Institute, .Year{
+    padding-right: 10px;
+    margin-bottom: 8px;
+}
+@media (max-width:720px){
+    .section_04 h3{
+        text-align: center;
+    }
+    .Degree input, .Institute input{
+        float: none;
+        width: 100%;
+    }
+}
+
+.Create{
+    margin: 10px;
+    width: fit-content;
+}
+#main_btn{
+    height: 30px;
+    border: 2px solid black;
+    background-color: rgb(25, 167, 189);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#main_btn:hover{
+    background-color: black;
+    color: white;
+}
+
+#resumeoutput{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 600px;
+    margin: 5px auto;
+}
+#main01, #main02, #main03, #main04{
+    background-color: antiquewhite;
+    border: 2px solid purple;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+@media (max-width:720px){
+    #resumeoutput{
+        width: auto;
+    }
+    #main01,#main02, #main03, #main04 {
+        text-align: center;
+    }
+}
+.back{
+    margin: 10px;
+    width: fit-content;
+}
+#BTF{
+    height: 30px;
+    border: 2px solid black;
+    background-color: rgb(25, 167, 189);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#BTF:hover{
+    background-color: black;
+    color: white;
+}

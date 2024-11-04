@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Using Form</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="main_heading">
+        <h1>DYNAMIC RESUME</h1>       
+    </div>
+    <form action="" class="container" id="Form">
+        <div class="section_01">
+            <h3 id="Personal_Information">Personal Information</h3>
+
+                <div class="Name_div">
+                    <div>
+                        <label for="firstname" id="First_Name">First Name</label>
+                        <input type="text" name="firstname">
+                    </div>
+                    <div>
+                        <label for="lastname" id="Last_Name">Last Name</label>
+                        <input type="text" name="lastname">
+                    </div>
+                </div>
+
+                <div class="Contact_div">
+                    <div>
+                        <label for="number">Contact No</label>
+                        <input type="number" name="number" id="Cell">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="Email">
+                    </div>
+                </div>
+                
+                <div class="Address_div">
+                    <div>
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="Address">
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="section_02">
+            <h3>Work Experience</h3>
+            <div class="Title">
+                <label for="jobtitle">Job Title</label>
+                <input type="text" name="jobtitle">
+            </div>
+            <div class="Organization">
+                <label for="comp">Company</label>
+                <input type="text" name="company">
+            </div>
+            <div class="Date">
+                <div>
+                    <label for="startdate">Start Date</label>
+                    <input type="date" name="startdate">
+                </div>
+                <div id="E_D">
+                    <label for="enddate">End Date</label>
+                    <input type="date" name="enddate" id="End_Date">
+                </div>
+            </div>
+            <div class="Tag" id="tag">
+                <input type="checkbox" id="Checkbox">
+                <label for="" name="status">I am Currently Working</label>
+            </div>
+
+            <!-- <div class="section02_A"></div>
+
+            <div class="btn">
+                <button class="btn" id="button1">Add Experience</button>
+            </div> -->
+            
+        </div>
+
+        <div class="section_03">
+            <h3>Skills</h3>
+            <div class="skills">
+                <label for="myskills">Skills</label>
+                <input type="text" name="myskills" id="skills">
+            </div>
+
+            <!-- <div class="btn">
+                <button class="btn">Add Skills</button>
+            </div> -->
+        </div>
+
+        <div class="section_04">
+            <h3>Education</h3>
+            <div class="Degree">
+                <label for="dgr">Degree</label>
+                <input type="text" name="dgr" id="degree">
+            </div>
+            <div class="Institute">
+                <label for="inst">Institute</label>
+                <input type="text" name="inst" id="Institute">
+            </div>
+            <div class="Year">
+                <div>
+                    <label for="passingyear">Passing Year</label>
+                    <input type="date" name="passingyear" id="passing_year">
+                </div>
+            </div>
+            <!-- <div class="btn">
+                <button class="btn">Add Education</button>
+            </div> -->
+        </div>
+
+        <div class="Create"> 
+            <button id="main_btn">Generate Resume</button>
+        </div>
+
+    </form>
+
+    <div id="resumeoutput">
+        <div id="main01">
+            <h3 id="sec01heading"> </h3>
+            <div id="Name_div">
+                <div id="FN"></div>
+                <div id="LN"></div>
+            </div>
+            <div>
+                <div id="cell"></div>
+                <div id="em"></div>
+            </div>
+            <div id="adr"></div>
+        </div>
+
+        <div id="main02">
+            <h3 id="sec02heading"> </h3>
+            <div>
+                <div id="JT"></div>
+            </div>
+            <div>
+                <div id="COMP"></div>
+            </div>
+            <div>
+                <div id="SD"></div>
+                <div id="ED"></div>
+            </div>
+        </div>
+
+        <div id="main03">
+            <h3 id="sec03heading"></h3>
+            <div id="display_Skills"></div>
+        </div>
+
+        <div id="main04">
+            <h3 id="sec04heading"></h3>
+            <div id="Degree"></div>
+            <div id="Inst"></div>
+            <div id="py"></div>
+        </div>
+
+        <div class="back"> 
+            <button id="BTF">Back to Form</button>
+        </div>
+    </div>
+
+    <script src="./script.js">
+        
+    </script>
+</body>
+</html>
